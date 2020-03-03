@@ -15,7 +15,7 @@
 
 ###### Bölüm,giriş yılı ve yeteneğe göre filtreleme ile kişi arayabilmesi
 
-###### Kendi yeteneklerini ve varsa iş deneyimlerini ekleyebilmesi
+###### Kendi yeteneklerinini ve varsa iş deneyimlerini ekleyebilmesi
 
 ###### Firmaları bulmak için sektör,sehir ve çalışan sayısına göre filtreleme ile arama yapabilmesi
 
