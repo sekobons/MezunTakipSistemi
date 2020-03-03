@@ -20,7 +20,7 @@ Yöneticilerin :
 
 
 
-https://imgyukle.com/i/RMQiAb
+
 
 
 
