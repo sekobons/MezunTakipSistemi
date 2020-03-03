@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragment.FirmaEkleDialogFragment">
+    <EditText
+            android:layout_width="182dp"
+            android:layout_height="46dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFirmaAdi"
+            android:hint="Firma Adı" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spinnerMevcutFirmalar" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.917" app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:layout_marginTop="4dp"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" android:layout_marginEnd="72dp"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/spinnerSektor" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etFirmaAdi" android:entries="@array/Sektorler"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Sektör :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" app:layout_constraintTop_toBottomOf="@+id/etFirmaAdi"
+            android:layout_marginTop="8dp" app:layout_constraintEnd_toStartOf="@+id/spinnerSektor"
+            android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.0" android:textSize="18sp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Bulunduğu İl :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" android:textSize="16sp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerSehirler" app:layout_constraintHorizontal_bias="0.0"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSehirler" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="72dp"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/spinnerSektor"/>
+    <Button
+            android:text="Ekle"
+            android:layout_width="114dp"
+            android:layout_height="43dp"
+            android:id="@+id/btnFirmaKaydet" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.451"
+            android:layout_marginTop="68dp" app:layout_constraintTop_toBottomOf="@+id/spinnerSure"/>
+    <ImageView
+            android:src="?attr/actionModeCloseDrawable"
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:id="@+id/imgGeri" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerCalisilanPozisyon" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp" app:layout_constraintTop_toBottomOf="@+id/textView26"
+            android:entries="@array/Pozisyon"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Çalışılan Pozisyon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.0" android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" android:layout_marginTop="4dp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Yetenek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView63" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            android:textStyle="bold" android:textSize="18sp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSehirler"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinneryetenek" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView63"
+            android:entries="@array/Yetenekler"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/spinnerSure"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:entries="@array/Süreler"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView65"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Çalışılan Süre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView65" android:textStyle="bold"
+            android:textSize="18sp" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCalisilanPozisyon" android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <Spinner
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerMevcutFirmalar" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imgGeri"
+            app:layout_constraintBottom_toBottomOf="@+id/etFirmaAdi" android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="1.0"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Ekleyeceğiniz firma mevcutsa lütfen seçiniz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorRefinementCount" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <RadioGroup
+            android:layout_width="156dp"
+            android:layout_height="65dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinneryetenek"
+            app:layout_constraintStart_toEndOf="@+id/spinnerSure" android:layout_marginStart="8dp"
+            android:id="@+id/radioGrupcum" android:checkedButton="@+id/calismiyorumRadio">
+        <RadioButton
+                android:text="Halen Çalışıyorum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/calisiyorumRadio" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Çalışmıyorum"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content" android:id="@+id/calismiyorumRadio" android:layout_weight="1"/>
+    </RadioGroup>
+    <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerCalisanSayi" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="72dp"
+            android:entries="@array/CalisanSayisi"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" app:layout_constraintHorizontal_bias="0.038"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Firmadaki Çalışan Sayısı"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:textStyle="bold" android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSure" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <Spinner
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerBaslangic" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGrupcum" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:entries="@array/LisansYil"/>
+    <Spinner
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerBitis"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/spinnerBaslangic"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:entries="@array/LisansYil"/>
+    <TextView
+            android:text="Başlangıç Tarihi:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView38" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGrupcum" app:layout_constraintEnd_toStartOf="@+id/spinnerBaslangic"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/spinnerBaslangic"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="Bitiş Tarihi:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView70" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" app:layout_constraintEnd_toStartOf="@+id/spinnerBitis"
+            android:layout_marginEnd="16dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerBitis" app:layout_constraintVertical_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>

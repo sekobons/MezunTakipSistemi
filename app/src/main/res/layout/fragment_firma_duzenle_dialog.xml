@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".Fragment.FirmaDuzenleDialogFragment">
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Sektör :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="72dp"
+            app:layout_constraintTop_toBottomOf="@+id/etFirmaAdi2" android:layout_marginTop="8dp"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSehirler2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSektor2"
+            app:layout_constraintStart_toEndOf="@+id/textView27" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="12dp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Bulunduğu İl :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" android:layout_marginStart="72dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="24dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etTelNo2"
+            android:hint="Telefon Numarası" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSehirler2" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.351"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etWebSitesi2"
+            android:hint="Web Sitesi "
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/etTelNo2" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.351"/>
+    <EditText
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFirmaAdi2"
+            android:hint="Firma Adı"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSektor2"
+            android:entries="@array/Sektorler"
+            app:layout_constraintTop_toBottomOf="@+id/etFirmaAdi2"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="72dp"
+            app:layout_constraintStart_toEndOf="@+id/textView21" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.755" android:layout_marginTop="8dp"/>
+    <Button
+            android:text="Kaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDuzenleKaydet" android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.449"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/spinnerSureDuzenle"
+            app:layout_constraintVertical_bias="0.739"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Çalışılan Pozisyon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView66" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/etWebSitesi2" android:textSize="14sp" android:textStyle="bold"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Yetenek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView67" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/etWebSitesi2"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/textView66"
+            app:layout_constraintVertical_bias="0.0" android:textSize="14sp" android:textStyle="bold"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Çalışılan Süre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView68" android:textSize="14sp" android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPozisyonDuzenle"/>
+    <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerPozisyonDuzenle" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView66" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:entries="@array/Pozisyon"
+    />
+    <Spinner
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerYetenekDuzenle" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView67"
+            android:entries="@array/Yetenekler"/>
+    <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSureDuzenle"
+            android:entries="@array/Süreler"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView68"/>
+</android.support.constraint.ConstraintLayout>

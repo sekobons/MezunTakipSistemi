@@ -1,0 +1,57 @@
+
+<android.support.constraint.ConstraintLayout
+xmlns:algolia="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:background="@color/myColor2"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="395dp"
+            android:layout_height="351dp" algolia:layout_constraintEnd_toEndOf="parent"
+            algolia:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="16dp"
+            algolia:layout_constraintBottom_toBottomOf="parent" android:id="@+id/aramaRecy"
+            android:layout_marginTop="8dp" algolia:layout_constraintTop_toBottomOf="@+id/textView28"
+            algolia:layout_constraintVertical_bias="0.112"/>
+    <Button
+            android:text="Ara"
+            android:layout_width="116dp"
+            android:layout_height="32dp"
+            android:id="@+id/btnAra" algolia:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp" algolia:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:background="@color/colorHighlighting"
+            android:backgroundTint="@color/myColor"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Öğrenci bulunamadı.."
+            android:layout_width="156dp"
+            android:layout_height="31dp"
+            android:id="@+id/textView28"
+            android:visibility="invisible"
+            android:layout_marginEnd="96dp"
+            algolia:layout_constraintEnd_toStartOf="@+id/progressArama" android:layout_marginTop="40dp"
+            algolia:layout_constraintTop_toBottomOf="@+id/etAranacakKisi"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressArama"
+            android:visibility="invisible" android:layout_marginEnd="28dp"
+            algolia:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="12dp"
+            algolia:layout_constraintTop_toBottomOf="@+id/btnAra"/>
+    <EditText
+            android:layout_width="228dp"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:padding="10dp"
+            android:background="@drawable/deneme"
+            android:id="@+id/etAranacakKisi" android:layout_marginEnd="8dp"
+            algolia:layout_constraintEnd_toStartOf="@+id/btnAra" android:layout_marginStart="8dp"
+            algolia:layout_constraintStart_toStartOf="parent" android:layout_marginTop="12dp"
+            algolia:layout_constraintTop_toTopOf="parent" algolia:layout_constraintHorizontal_bias="0.197"
+            android:hint="Aranacak isim.."/>
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragment.ProfilResmiYukleFragment">
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="GALERİDEN SEÇ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGaleridenSec" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="36sp"
+            app:layout_constraintHorizontal_bias="0.496" android:layout_marginTop="16dp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="KAMERADAN ÇEK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/tvKamerdanCek" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="56dp" android:textSize="36sp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvGaleridenSec" app:layout_constraintVertical_bias="0.796"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>

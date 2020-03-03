@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fragment.IlanEkleFragment">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etFirmaIlan"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:hint="Firma İsmi"
+            app:layout_constraintHorizontal_bias="0.12"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="İş Pozisyonu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPzs"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/etFirmaIlan"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="28dp"/>
+    <Spinner
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" android:layout_marginEnd="100dp"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/spinnerIsPozisyon"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/etFirmaIlan"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/tvPzs"
+            app:layout_constraintVertical_bias="0.384" android:entries="@array/Pozisyon"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Askerlik Durumu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAsk" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/tvPzs"/>
+    <Spinner
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerIsAskerlik" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/tvAsk"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/spinnerIsPozisyon"
+            app:layout_constraintVertical_bias="0.384" android:entries="@array/Askerlik"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Eğitim Durumu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEgt" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/tvAsk"/>
+    <Spinner
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerIsEgitimDurumu" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="100dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/spinnerIsAskerlik"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEgt" android:entries="@array/EgitimDurum"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Çalışma Şekli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCls" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/tvEgt"/>
+    <Spinner
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerIsCalismaSekli" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="100dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/spinnerIsEgitimDurumu"
+            android:entries="@array/CalismaSekli"/>
+    <EditText
+            android:layout_width="360dp"
+            android:layout_height="87dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etIsTanimi"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerIsCalismaSekli"
+            app:layout_constraintHorizontal_bias="0.228" android:hint="İş tanımı" android:layout_marginTop="8dp"/>
+    <EditText
+            android:layout_width="360dp"
+            android:layout_height="87dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:id="@+id/etIsNitelik" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/etIsTanimi" app:layout_constraintHorizontal_bias="0.228"
+            android:hint="Gerekli Nitelikler" android:layout_marginTop="12dp"/>
+    <Button
+            android:text="Ekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIlanAyrintiEkle" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/etIsNitelik"
+            app:layout_constraintHorizontal_bias="0.4" app:layout_constraintVertical_bias="0.243"/>
+</android.support.constraint.ConstraintLayout>

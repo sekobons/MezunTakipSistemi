@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Pozisyon">
+        <item>Satış yöneticisi</item>
+        <item>Müşteri yöneticisi</item>
+        <item>Yazılım Mühendisi</item>
+        <item>CRM uzmanı</item>
+        <item>Network Mühendisi</item>
+        <item>Mobil Uygulama Geliştirme Uzmanı</item>
+        <item>Bilgi İşlem Uzmanı</item>
+        <item>İdari İşler Sorumlusu</item>
+        <item>Pazarlama ve Satış Müdürü</item>
+        <item>Müşteri Temsilcisi</item>
+        <item>Ar-Ge Uzmani</item>
+        <item>Yönetici Asistanı</item>
+        <item>Lojistik Elemanı</item>
+        <item>Lojistik Şefi</item>
+        <item>Fabrika Müdürü</item>
+        <item>Malzeme Planlama Şefi</item>
+        <item>Mimar (İç Mimar)</item>
+        <item>Peyzaj Mimarı</item>
+        <item>İnşaat Mühendisi</item>
+        <item>İnşaat Teknikeri</item>
+        <item>Sekreter</item>
+        <item>Laboratuar Müdürü</item>
+        <item>Tedarik Uzmanı</item>
+        <item>Teknik Planlama Mühendisi</item>
+        <item>Tedarikçi Kalite Mühendisi</item>
+        <item>Depo Teknisyeni</item>
+        <item>İşletme Şefi (Tekstil)</item>
+        <item>Dokuma Mühendisi</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.mezuntakipsistemi">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".YoneticiLogin">
+        </activity>
+        <activity
+                android:name=".YoneticiLoginActivity"
+                android:label="@string/title_activity_yonetici_login">
+        </activity>
+        <activity android:name=".YoneticiActivity">
+        </activity>
+        <activity android:name=".MesajlarMesajYazActivity">
+        </activity>
+        <activity android:name=".MesajlarActivity">
+        </activity>
+        <activity android:name=".KisiProfilleriActivity">
+        </activity>
+        <activity android:name=".IlanlarAyrintiActivity">
+        </activity>
+        <activity android:name=".IsilanlariActivity">
+        </activity>
+        <activity android:name=".OgrenciActivity">
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key"/>
+
+        <activity
+                android:name=".HaritaActivity"
+                android:label="@string/title_activity_harita">
+        </activity>
+        <activity android:name=".FirmaAyrintiActivity">
+        </activity>
+        <activity android:name=".FirmalarActivity">
+        </activity>
+        <activity android:name=".FirmalarimActivity">
+        </activity>
+        <activity android:name=".ProfilimActivity">
+        </activity>
+        <activity android:name=".ProfilAyarlari">
+        </activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

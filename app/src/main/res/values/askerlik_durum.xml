@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Askerlik">
+        <item>Yapılmadı</item>
+        <item>Tecilli</item>
+        <item>Yapıldı</item>
+        <item>Muaf</item>
+    </string-array>
+</resources>

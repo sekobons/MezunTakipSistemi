@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="LisansTurleri">
+        <item>Ön Lisans</item>
+        <item >Lisans</item>
+        <item >YüksekLisans</item>
+        <item >Doktora</item>
+    </string-array>
+
+</resources>

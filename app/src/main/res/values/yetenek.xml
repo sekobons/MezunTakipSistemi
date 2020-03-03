@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Yetenekler">
+        <item>Android</item>
+        <item>Web Geliştirme</item>
+        <item>C++</item>
+        <item>Python</item>
+        <item>Php</item>
+        <item>Linux</item>
+        <item>SQL</item>
+        <item>C#</item>
+        <item>Swift</item>
+        <item>Microsoft Office</item>
+        <item>Veri Analizi</item>
+        <item>AutoCAD</item>
+        <item>ASP.NET</item>
+        <item>Matlab</item>
+        <item>SEO</item>
+        <item>Agile Metotları</item>
+        <item>Girişim Başlatma</item>
+        <item>Bilgisayar Donanımı</item>
+        <item>BT Stratejisi</item>
+        <item>BT Yönetimi</item>
+        <item>Photoshop</item>
+        <item>Müşteri Hizmetleri</item>
+        <item>Tıbbi Cihazlar</item>
+        <item>ERP</item>
+        <item>CAD</item>
+        <item>Test Etme</item>
+        <item>Telekomünikasyon</item>
+        <item>Dijital Pazarlama</item>
+        <item>Teknik Destek</item>
+        <item>Fotoğrafçılık</item>
+        <item>Kurumsal Finansman</item>
+        <item>Grafik Tasarım</item>
+        <item>Gayri Menkul</item>
+        <item>Müşteri Hizmetleri</item>
+        <item>Finansal Hizmetler</item>
+        <item>Medeni Hukuk</item>
+        <item>İnsan Kaynakları</item>
+        <item>Kurumsal Hukuk</item>
+        <item>Lojistik Yönetimi</item>
+        <item>Petrol ve Doğal Gaz</item>
+        <item>VisualBasic</item>
+        <item>Dijital Pazarlama</item>
+        <item>SAP2000</item>
+        <item>Visio</item>
+        <item>UML</item>
+        <item>Uluslararası İlişkiler</item>
+        <item>Nanoteknoloji</item>
+
+
+
+    </string-array>
+</resources>

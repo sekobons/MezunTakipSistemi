@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Ad-Soyad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOgrAdi" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold" android:layout_marginStart="16dp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Ogretim Turu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOgretimTuruOgr" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/tvOgrAdi"
+            android:layout_marginStart="24dp" android:textStyle="bold"/>
+
+
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Giriş Yılı"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGirisYiliOGr" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/tvOgretimTuruOgr"
+            android:layout_marginStart="36dp" android:textStyle="bold"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Mezuniyet YIlı"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMznYili"
+            app:layout_constraintStart_toEndOf="@+id/tvGirisYiliOGr"
+            android:layout_marginStart="32dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" android:textStyle="bold" android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.294"/>
+    <View android:layout_width="match_parent" android:layout_height="2dp"
+          android:background="@color/myColor" app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/tvGirisYiliOGr"
+          android:layout_marginEnd="4dp">
+
+    </View>
+
+
+</android.support.constraint.ConstraintLayout>

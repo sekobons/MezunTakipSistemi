@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="EgitimDurum">
+        <item>Ön Lisans(Mezun),Lisans(Mezun)</item>
+        <item>Ön Lisans(Mezun)</item>
+        <item>Lisans(Mezun)</item>
+        <item>Lisansüstü(Mezun)</item>
+    </string-array>
+</resources>

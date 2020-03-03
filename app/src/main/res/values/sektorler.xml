@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Sektorler">
+        <item>Muhasebe</item>
+        <item>Tarım</item>
+        <item>Otomotiv</item>
+        <item>Bankacılık</item>
+        <item>İnşaat</item>
+        <item>Kamu Görevleri</item>
+        <item>Bilgisayar Yazılımı</item>
+        <item>Sağlık</item>
+        <item>Avukatlar / Hukuk Büroları</item>
+        <item>Radyo / Televizyon Kanalları</item>
+        <item>Deniz Taşımacılığı</item>
+        <item>Tıbbi Malzemeler</item>
+        <item>Gıda</item>
+        <item>Çevre</item>
+
+
+
+
+
+
+    </string-array>
+</resources>

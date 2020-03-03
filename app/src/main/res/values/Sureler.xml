@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Süreler">
+        <item>3 ay</item>
+        <item>4 ay</item>
+        <item>5 ay</item>
+        <item>6 ay</item>
+        <item>7 ay</item>
+        <item>8 ay</item>
+        <item>9 ay</item>
+        <item>10 ay</item>
+        <item>11 ay</item>
+        <item>12 ay</item>
+        <item>2 yıl</item>
+        <item>3 yıl</item>
+        <item>4 yıl</item>
+        <item>5 yıl +</item>
+    </string-array>
+</resources>

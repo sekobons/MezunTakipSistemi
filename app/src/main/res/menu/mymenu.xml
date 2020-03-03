@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Çıkış" android:id="@+id/menuCikis"/>
+    <item android:title="ProfilAyarlari" android:id="@+id/menuProfil"/>
+    <item android:title="Profilim" android:id="@+id/menuProfilim"/>
+    <item android:title="Firmalar" android:id="@+id/menuFirmalar"/>
+    <item android:title="Öğrenci" android:id="@+id/menuOgrenci"/>
+    <item android:title="İş İlanları" android:id="@+id/menuIlanlar"/>
+    <item android:title="Mesajlar" android:id="@+id/mesajlarMenu"/>
+</menu>

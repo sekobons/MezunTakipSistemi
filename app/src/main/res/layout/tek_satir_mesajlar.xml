@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/kisiPP"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Mesaj"
+            android:layout_width="68dp"
+            android:layout_height="20dp"
+            android:id="@+id/tvMesajAyrinti" app:layout_constraintStart_toEndOf="@+id/kisiPP"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvKisiAdiMesaj"
+            app:layout_constraintBottom_toBottomOf="@+id/kisiPP" android:textSize="15sp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Tarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="36dp" android:id="@+id/tvTarihAyrinti" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+    <com.example.mezuntakipsistemi.MyTextView
+            android:text="Kisi adi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvKisiAdiMesaj" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/kisiPP" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.085"/>
+</android.support.constraint.ConstraintLayout>

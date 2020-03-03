@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Bolumler">
+        <item>Bilgisayar Mühendisliği</item>
+        <item>Çevre Mühendisliği</item>
+        <item>Elektrik-Elektronik Mühendisliği</item>
+        <item>Endüstri Mühendisliği</item>
+        <item>Harita Mühendisliği</item>
+        <item>İnşaat Mühendisliği</item>
+        <item>Jeoloji Mühendisliği</item>
+        <item>Kimya Mühendisliği</item>
+        <item>Maden Mühendisliği</item>
+        <item>Makine Mühendisliği</item>
+        <item>Metalurji ve Malzeme Mühendisliği</item>
+        <item>MİMARLIK</item>
+        <item>ŞEHİR VE BÖLGE PLANLAMA</item>
+    </string-array>
+</resources>

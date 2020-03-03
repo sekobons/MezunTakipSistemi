@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="OgretimTuru">
+        <item>1.Ogretim</item>
+        <item>2.Ogretim</item>
+    </string-array>
+</resources>
